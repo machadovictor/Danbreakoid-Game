@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DanBreakoid_CDI</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="lib/anime.min.js"></script>
+</head>
+<body>
+    <div id="start-container">
+        <img id="startGame" src="image/game_logo.png" />
+        <br/>
+        <button id="startBtn" onclick="startGame()">START</button>
+    </div>
+    <div id="loader" class="loader" hidden></div>
+    <div id="Canvas-Container" hidden>
+        <canvas id="myCanvas" width="650" height="494"></canvas>
+    </div>
+    <div id="win-container" hidden>
+        <h1>CONGRATULATION</h1>
+        <img id="winGame" src="image/win_Level.jpg" />
+        <br/>
+        <button id="winBtn" onclick="document.location.reload()">PLAY AGAIN</button>
+    </div>
+    <div id="end-container" hidden>
+        <img id="endGame" src="image/gameover.png" />
+        <br/>
+        <button id="endBtn" onclick="document.location.reload()">PLAY AGAIN</button>
+    </div>
+
+    <script src="./js/DanBreakoid.js"></script>
+</body>
+</html>
